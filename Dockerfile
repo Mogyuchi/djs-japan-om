@@ -4,14 +4,14 @@ FROM node:18.18.2 AS deps
 ARG NODE_ENV=production
 WORKDIR /app
 COPY ./package*.json ./
-RUN npm ci
+RUN npm -ddd ci
 
 FROM node:18.18.2 AS builder
 ARG NODE_ENV=development
 WORKDIR /app
 COPY ./build.js ./
 COPY ./package*.json ./
-RUN npm ci
+RUN npm -ddd ci
 COPY ./src/ ./src/
 RUN npm run build
 
