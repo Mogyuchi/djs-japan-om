@@ -1,6 +1,6 @@
 {
   "ts-node": {
-    "experimentalSpecifierResolution": "node"
+    "experimentalSpecifierResolution": "node",
   },
   "compilerOptions": {
     "target": "ES2022",
@@ -13,7 +13,7 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "verbatimModuleSyntax": true
+    "verbatimModuleSyntax": true,
   },
-  "include": ["src/**/*"]
+  "include": ["src/**/*"],
 }

@@ -3,25 +3,25 @@
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended-type-checked",
-    "prettier"
+    "prettier",
   ],
   "parser": "@typescript-eslint/parser",
   "plugins": ["@typescript-eslint", "import"],
   "parserOptions": {
     "sourceType": "module",
     "ecmaVersion": "latest",
-    "project": ["tsconfig.json", "tsconfig.*.json"]
+    "project": ["tsconfig.json", "tsconfig.*.json"],
   },
   "env": {
-    "node": true
+    "node": true,
   },
   "rules": {
     "import/order": [
       "error",
       {
         "alphabetize": { "order": "asc" },
-        "newlines-between": "never"
-      }
+        "newlines-between": "never",
+      },
     ],
     "@typescript-eslint/restrict-template-expressions": "off",
     "@typescript-eslint/no-base-to-string": "off",
@@ -29,8 +29,8 @@
       "error",
       {
         "varsIgnorePattern": "^_",
-        "argsIgnorePattern": "^_"
-      }
-    ]
-  }
+        "argsIgnorePattern": "^_",
+      },
+    ],
+  },
 }
